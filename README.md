@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## To deploy on github pages
+
+To deploy this app on github pages follow instructions as mentioned below.
+1) C:\Users\<USER>\git\firstapp>ng add angular-cli-ghpages.This is one time activity.
+2) C:\Users\<USER>\git\firstapp>ng deploy --base-href=/firstapp/
+3) Navigate to https://yogesh-nandwana.github.io/firstapp/ in browser
