@@ -18,6 +18,8 @@ import { Product,products } from '../products';
       <button (click)="share()">
         Share
       </button>
+
+      <app-product-alerts [prod]="p"></app-product-alerts>
     </div>
   `,
   styles: [
