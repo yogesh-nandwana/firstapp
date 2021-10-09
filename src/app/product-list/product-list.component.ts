@@ -14,15 +14,12 @@ import { Product,products } from '../products';
         Description: {{ p.description }}
       </p>
 
-      <button (click)="share()">
-        Share
-      </button>
+      <button (click)="share()">Share</button>
 
       <app-product-alerts [prod]="p" (notify)="onNotify()"></app-product-alerts>      
     </div>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ProductListComponent implements OnInit {
   prods:Product[] = products;

@@ -34,6 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## To deploy on github pages
 
 To deploy this app on github pages follow instructions as mentioned below.
-1) C:\Users\<USER>\git\firstapp>ng add angular-cli-ghpages.This is one time activity.
-2) C:\Users\<USER>\git\firstapp>ng deploy --base-href=/firstapp/
-3) Navigate to https://yogesh-nandwana.github.io/firstapp/ in browser
+1) Add angular-cli-ghpages to the repo using step#2. This is one time activity.
+2) C:\Users\<USER>\git\firstapp>ng add angular-cli-ghpages.
+3) C:\Users\<USER>\git\firstapp>ng deploy --base-href=/firstapp/
+4) Navigate to https://yogesh-nandwana.github.io/firstapp/ in browser
