@@ -17,7 +17,7 @@ import { ActivatedRoute } from '@angular/router';
   ]
 })
 export class ProductDetailsComponent implements OnInit {
-  product: Product | undefined;
+  product: Product | undefined; /** product can be either of type Product or undefined */
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {

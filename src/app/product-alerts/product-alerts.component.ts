@@ -13,6 +13,10 @@ import { Product } from '../products';
 })
 export class ProductAlertsComponent implements OnInit {
   @Input() prod!: Product;
+  /**
+   * non-null assertion operator (!)
+   * in plain English,when you add an exclamation mark after variable/property name, you're telling to TypeScript that you're certain that value is not null or undefined.
+   */
   @Output() notify = new EventEmitter();
   
   constructor() { }
