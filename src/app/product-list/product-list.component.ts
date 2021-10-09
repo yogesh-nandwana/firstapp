@@ -7,7 +7,7 @@ import { Product,products } from '../products';
     <h2>Products</h2>
     <div *ngFor='let p of prods'>
       <a [title]="p.name+' details'" [routerLink]="['/products', p.id]">
-      <h3>{{p.name}}</h3>
+        <h3>{{p.name}}</h3>
       </a>      
 
       <p *ngIf="p.description">
