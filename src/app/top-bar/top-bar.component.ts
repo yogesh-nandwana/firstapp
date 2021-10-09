@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-top-bar',
   template: `
     <h1>My Store</h1>
-    <a class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a>
+    <a routerLink="/cart" class="button fancy-button">
+      <i class="material-icons">shopping_cart</i>Checkout
+    </a>
   `,
   styles: [
   ]
