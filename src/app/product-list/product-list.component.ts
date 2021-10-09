@@ -18,7 +18,7 @@ import { Product,products } from '../products';
         Share
       </button>
 
-      <app-product-alerts [prod]="p" (notify)="onNotify()"></app-product-alerts>
+      <app-product-alerts [prod]="p" (notify)="onNotify()"></app-product-alerts>      
     </div>
   `,
   styles: [
