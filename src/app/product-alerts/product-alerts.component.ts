@@ -1,11 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Product } from '../products';
 
 @Component({
   selector: 'app-product-alerts',
   template: `
   <p *ngIf="prod && prod.price > 700">
-    <button (click)="notify()">Notify Me</button>
+    <button (click)="notify.emit()">Notify Me</button>
   </p>
   `,
   styles: [
@@ -13,13 +13,11 @@ import { Product } from '../products';
 })
 export class ProductAlertsComponent implements OnInit {
   @Input() prod!: Product;
+  @Output() notify = new EventEmitter();
+  
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  notify(){
-    alert("Notified");
   }
 
 }
