@@ -8,8 +8,7 @@ import { Product } from '../products';
     <button (click)="notify.emit()">Notify Me</button>
   </p>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ProductAlertsComponent implements OnInit {
   @Input() prod!: Product;
