@@ -9,6 +9,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartDetailComponent } from './cart-detail/cart-detail.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingInfoComponent } from './shipping-info/shipping-info.component';
 
 
 @NgModule({
@@ -18,14 +20,17 @@ import { RouterModule } from '@angular/router';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartDetailComponent
+    CartDetailComponent,
+    ShippingInfoComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,    
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartDetailComponent }
+      { path: 'cart', component: CartDetailComponent },
+      { path: 'shipping',component: ShippingInfoComponent}
     ])
   ],
   providers: [],

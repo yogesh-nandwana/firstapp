@@ -5,7 +5,9 @@ import { CartService } from '../cart.service';
   selector: 'app-cart-detail',
   template: `
     <h3>Cart</h3>
-
+    <p>
+      <a routerLink="/shipping">Shipping Prices</a>
+    </p>
     <div class="cart-item" *ngFor="let item of items">
       <span>{{ item.name }}</span>
       <span>{{ item.price | currency }}</span>
@@ -18,7 +20,6 @@ export class CartDetailComponent implements OnInit {
   items = this.cartService.getItems();
   constructor(private cartService: CartService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
