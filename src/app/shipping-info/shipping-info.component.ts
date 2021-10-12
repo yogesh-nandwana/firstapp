@@ -10,8 +10,7 @@ import { CartService } from '../cart.service';
     <span>{{ shipping.price | currency }}</span>
   </div>
   `,
-  styles: [
-  ]
+  styles: []
 })
 export class ShippingInfoComponent implements OnInit {
   shippingCosts = this.cartService.getShippingPrices();

@@ -31,6 +31,6 @@ export class ProductListComponent implements OnInit {
   }
 
   onNotify(p:Product){
-    alert(`You have subscribed for sale notification of product:${p.name}`);
+    alert(`You have subscribed for sale notification of product: ${p.name}`);
   }
 }
