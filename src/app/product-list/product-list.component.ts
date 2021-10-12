@@ -15,8 +15,7 @@ import { Product,products } from '../products';
       </p>
 
       <button (click)="share()">Share</button>
-
-      <app-product-alerts [prod]="p" (notify)="onNotify()"></app-product-alerts>      
+      <app-product-alerts [prod]="p" (notify)="onNotify(p)"></app-product-alerts>      
     </div>
   `,
   styles: []
@@ -31,7 +30,7 @@ export class ProductListComponent implements OnInit {
     alert('The product has been shared.');
   }
 
-  onNotify(){
-    alert("You have subscribed for this product's sale notification.");
+  onNotify(p:Product){
+    alert(`You have subscribed for sale notification of product:${p.name}`);
   }
 }

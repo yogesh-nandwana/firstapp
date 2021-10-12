@@ -7,7 +7,6 @@ import { CartService } from '../cart.service';
   selector: 'app-product-details',
   template: `
   <h2>Product Details</h2>
-
   <div *ngIf="product">
     <h3>{{ product.name }}</h3>
     <h4>{{ product.price | currency }}</h4>
