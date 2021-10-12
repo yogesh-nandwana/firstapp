@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
     <span>{{ shipping.type }}</span>
     <span>{{ shipping.price | currency }}</span>
   </div>
+  <a href="/cart">  Back</a>
   `,
   styles: []
 })

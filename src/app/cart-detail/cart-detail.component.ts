@@ -26,6 +26,7 @@ import { FormBuilder } from '@angular/forms';
       </div>
       
       <button class="button" type="submit">Purchase</button>
+      <a href="/">  Back</a>
     </form>
   `,
   styles: []
