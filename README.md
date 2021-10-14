@@ -38,3 +38,6 @@ To deploy this app on github pages follow instructions as mentioned below.
 2) C:\Users\<USER>\git\firstapp>ng add angular-cli-ghpages.
 3) C:\Users\<USER>\git\firstapp>ng deploy --base-href=/firstapp/
 4) Navigate to https://yogesh-nandwana.github.io/firstapp/ in browser
+
+## TODO's
+1) back links are not working.
