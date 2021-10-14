@@ -29,8 +29,7 @@ import { ShippingInfoComponent } from './shipping-info/shipping-info.component';
     HttpClientModule, 
     ReactiveFormsModule,   
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'firstapp', component: ProductListComponent },//Need to check if there is way to merge/define these paths in single config
+      { path: '', component: ProductListComponent },      
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartDetailComponent },
       { path: 'shipping',component: ShippingInfoComponent}
