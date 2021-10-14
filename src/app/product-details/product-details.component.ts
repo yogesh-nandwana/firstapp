@@ -12,7 +12,7 @@ import { CartService } from '../cart.service';
     <h4>{{ product.price | currency }}</h4>
     <p>{{ product.description }}</p>
     <button (click)="addToCart(product)">Buy</button>
-    <a href="/">  Back</a>
+    <a href="firstapp">  back</a>
   </div>
   `,
   styles: []
